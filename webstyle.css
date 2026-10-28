@@ -1,0 +1,15 @@
+.logo{
+    font-size: 20rem;
+    /* Set the path to your image */ 
+    background-image: url("https://media.istockphoto.com/id/677506662/vector/floating-bun-with-sesame.jpg"); 
+    /* Prevent the image from repeating/tiling */ 
+    background-repeat: no-repeat; 
+    /* Center the image horizontally and vertically */
+    background-position: center; 
+    /* Scale the image to perfectly cover the entire container */ 
+    background-size: cover; 
+    /* Keep the background fixed during scroll (optional parallax effect)*/ 
+    background-attachment: fixed; 
+
+
+}
