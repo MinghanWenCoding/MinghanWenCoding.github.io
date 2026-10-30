@@ -1,15 +1,41 @@
+@import url('https://googleapis.com');
+
+
+
+
+
+.infinity{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 73, 73, 0.8);
+}
+
+
+
 .logo{
-    font-size: 20rem;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 12rem;
+    
+    aspect-ratio: 1200/1000;
+    font-size: 15rem;
+    font-family: 'Roboto', sans-serif;
+
+    text-align: center;
+
     /* Set the path to your image */ 
-    background-image: url("https://media.istockphoto.com/id/677506662/vector/floating-bun-with-sesame.jpg"); 
+    background-image: url("burgerlogo.png"); 
     /* Prevent the image from repeating/tiling */ 
     background-repeat: no-repeat; 
     /* Center the image horizontally and vertically */
     background-position: center; 
     /* Scale the image to perfectly cover the entire container */ 
-    background-size: cover; 
+    background-size: contain; 
     /* Keep the background fixed during scroll (optional parallax effect)*/ 
-    background-attachment: fixed; 
+    background-attachment: ; 
 
 
 }
