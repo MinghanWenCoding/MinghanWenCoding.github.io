@@ -1,0 +1,41 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #16213e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    width: 100vw;
+    height: 10vh;
+    align-items: right;
+    justify-content: right;
+}
+
+
+.navbuttons {
+    background-color: red;
+    
+    padding: 5px;
+    flex-grow: 1;
+    font-size: 2rem;
+    border-style: none;
+   
+    
+}
+
+.navbuttons:hover {
+    background-color: #f4c26a;
+}
+
+.logo {
+    width: 5%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
