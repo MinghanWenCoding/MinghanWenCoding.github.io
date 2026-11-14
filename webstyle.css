@@ -35,6 +35,25 @@ body{
     height: 10%;
     background-color: rgba(255, 73, 73, 0.8);
 }
+
+#kitchenline{
+    display:flex;
+    background-color:blue;
+}
+
+#kitchenline_description{
+    background-color: white ;
+    height: 10rem;
+    width: 10rem;
+    font-size:3rem;
+    overflow:scroll;
+    margin: 10px;
+    padding: 20px;
+   /* border-width: 10px;
+    border-radius: 50px;
+    border-color: orange;*/
+
+}
 /*
 .logo{
     width: 50px;
