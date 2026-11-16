@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="webstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playwrite+IT+Trad:wght@100..400&display=swap" rel="stylesheet">
 
     <title>Burger Prince</title>
     <!--(Create a website that sells 5 different types of burgers.)-->
@@ -18,6 +18,14 @@
     - Ingredient List
     */-->
 
+    <!--Color palette
+    - 3b4549 tint blue black
+    - 66666E dim grey
+    - 9999A1 rosy granite
+    - E6E6E9 alablaster grey
+    - F4F4F6 platinum
+-->
+
 </head>
 <body>
     <div class="logo"></div>
@@ -28,9 +36,35 @@
         <a href="#about">
             <div class ="navbuttons">ABOUT</div>
         </a>
-        <a href="#menu">
-            <div class ="navbuttons">MENU</div>
-        </a>
+
+
+
+
+
+
+        <!-- Dropdown menu -->
+        <div class="nav-dropdown">
+            <a href="#menu" class="navbuttons">MENU</a>
+            <div class="dropcontent">
+                <a class="menu_item" href="#item1">Item 1</a>
+                <a class="menu_item" href="#item2">Item 2</a>
+                <a class="menu_item" href="#item3">Item 3</a>
+                <a class="menu_item" href="#item4">Item 4</a>
+                <a class="menu_item" href="#item5">Item 5</a>
+                <a class="menu_item" href="#item6">Item 6</a>
+                <a class="menu_item" href="#item7">Item 7</a>
+                <a class="menu_item" href="#item8">Item 8</a>
+                <a class="menu_item" href="#item9">Item 9</a>
+                <a class="menu_item" href="#item10">Item 10</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
         <a href="#locations">
             <div class ="navbuttons">LOCATIONS</div>
         </a>
@@ -40,19 +74,45 @@
     </div>
 
 <!--Main Website-->
+<div id="first"> 
+    <div id="first_description">BURGER PRINCE</div>
+    <img id="first_pic" src="https://www.adobe.com/creativecloud/photography/discover/media_10641545c1db8bdced5fdb55761fe663b53d42f87.png?width=750&format=png&optimize=medium">
+    
+</div>
 
 <div id="overseer">
 
     <!--Section: About-->
     <section id="about" class="web_section">
-        <div class="section_controller">
-
+        <div id="section_controller">
+            <div id="about_pic1">
+                <img id="picture1" src="https://t3.ftcdn.net/jpg/06/34/36/34/360_F_634363431_iyGVkPVdgNaeioHGK91dGPHDUtuMXSss.jpg" >
+            </div>
+           
+            <div id="about_description1">
+                <h1>
+                    About Us
+                </h1>
+                <p>
+                    At BURGER PRINCE, we believe a great burger doesn’t need fancy gimmicks—just 100% locally sourced, never-frozen beef smashed to perfection on a screaming-hot flat-top grill. Founded in 2024 by two lifelong friends with a shared obsession for crispy edges and melted cheddar, our kitchen builds every order from scratch on freshly baked brioche buns. Whether you're grabbing a classic double cheeseburger with our signature house sauce or indulging in hand-cut garlic fries, we're here to serve fast, honest comfort food that hits the spot every single time.
+                </p>
+            </div>
         </div>
     </section>
 
     <!--Section: Menu-->
     <section id="menu" class="web_section">
-        <div class="section_controller">
+        <div class="section_controller" id="menu_section_controller">
+            <div  id="item1">gojo won</div>
+            <div  id="item2">gojo won</div>
+            <div  id="item3">gojo won</div>
+            <div  id="item4">gojo won</div>
+            <div  id="item5">gojo won</div>
+            <div  id="item6">gojo won</div>
+            <div  id="item7">gojo won</div>
+            <div  id="item8">gojo won</div>
+            <div  id="item9">gojo won</div>
+            <div  id="item10">gojo won</div>
             
         </div>
     </section>
@@ -71,7 +131,7 @@
         </div>
     </section>
 
-</div>
+</div> <!--div overseer close-->
 
 
 </body>

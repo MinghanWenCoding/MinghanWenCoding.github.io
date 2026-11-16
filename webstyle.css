@@ -1,4 +1,4 @@
-@import url('https://googleapis.com');
+
 
 
 /* Enable smooth scrolling for the document viewport and body scroller. */
@@ -19,10 +19,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  height: 5vh;
+  background-color: #3b4549;
   display: flex;
   justify-content: center;
-  padding: 1rem 0;
+  align-items: center;
+  padding:0;
   z-index: 1000;
 }
 
@@ -36,10 +38,11 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #66666E;
   border-radius: 4px;
 }
 
+/*sections*/
 #overseer{
     display:flex;
     width: 100vw;
@@ -48,10 +51,133 @@ body {
 }
 .web_section{
     width:100vw;
-    height:1000px;
-    max-height: 800px;
+    height:auto;
+    min-height: 400px;
     background-color: rgba(109, 109, 109, 0.8);
     margin-top: 1rem;
-    border-radius: 4px;
 
 }
+
+/*First Picture and title*/
+
+#first{
+  position: relative;
+  width: 100%;
+}
+
+#first_pic{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* This preserves the full image without cropping */
+}
+
+#first_description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-sizing: border-box;
+  font-size: clamp(8rem, 10vh, 20rem); /*new toy that makes the text more responsive than rem*/
+  font-family: 'Allura', cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+/*Section: About*/
+#section_controller{
+  display:flex;
+  flex-direction:row;
+  background-color: #9999A1;
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
+
+
+}
+
+#about_pic1{
+  background-color: blue; /* placeholder to find div box */
+  width: 40%;
+  height: auto;
+
+}
+
+#picture1{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#about_description1{
+  width: 60%;
+  height: auto;
+  background-color: #F4F4F6; 
+  border-radius: 1rem;
+  margin: 1rem;
+  padding:1rem; 
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-family: 'Allura', cursive;
+
+}
+
+/*Section: Menu*/
+
+/* Keep the dropdown aligned with the MENU button */
+.nav-dropdown {
+  position: relative;
+  align-self: center;
+}
+
+.nav-dropdown > .navbuttons {
+  display: block;
+}
+
+.dropcontent {
+  display: none; /* hides the menu drop down*/
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(54, 54, 54);
+}
+
+.dropcontent a {
+  color: white;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropcontent a:hover {
+  background-color: #555;
+}
+
+.nav-dropdown:hover .dropcontent {
+  display: block;
+  animation-name: menu_glide_drop;
+  animation-duration: 1s;
+}
+
+@keyframes menu_glide_drop {
+  0% {
+    opacity: 0;
+    transform: translate(0, -40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.dropcontent a{
+  font-size: 0.8rem;
+}
+
+/*Work on menu items now*/
