@@ -77,7 +77,7 @@ body {
   top: 50%;
   left: 50%;
   box-sizing: border-box;
-  font-size: clamp(8rem, 10vh, 20rem); /*new toy that makes the text more responsive than rem*/
+  font-size: clamp(4rem, 10vh, 20rem); /*new toy that makes the text more responsive than rem*/
   font-family: 'Allura', cursive;
   font-weight: 400;
   font-style: normal;
@@ -99,8 +99,9 @@ body {
 }
 
 #about_pic1{
-  background-color: blue; /* placeholder to find div box */
-  width: 40%;
+  /*background-color: blue;*/ 
+  /* placeholder to find div box */
+  width: 60%;
   height: auto;
 
 }
@@ -113,14 +114,14 @@ body {
 }
 
 #about_description1{
-  width: 60%;
+  width: 40%;
   height: auto;
   background-color: #F4F4F6; 
   border-radius: 1rem;
   margin: 1rem;
   padding:1rem; 
   text-align: center;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2rem, 3rem);
   font-family: 'Allura', cursive;
 
 }
@@ -131,6 +132,7 @@ body {
 .nav-dropdown {
   position: relative;
   align-self: center;
+  z-index:999;
 }
 
 .nav-dropdown > .navbuttons {
@@ -145,6 +147,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background-color: rgb(54, 54, 54);
+  z-index: 999;
 }
 
 .dropcontent a {
@@ -181,3 +184,30 @@ body {
 }
 
 /*Work on menu items now*/
+
+.item_controller{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.item_picture{
+  background-color:aqua;
+  min-width:100px;
+  min-height:100px;
+  margin:1rem;
+}
+
+.item_list{
+  background-color:aqua;
+  min-width:100px;
+  min-height:100px;
+  margin:1rem;
+}
+
+.item_description{
+  background-color:aqua;
+  min-width:100px;
+  min-height:100px;
+  margin:1rem;
+}
