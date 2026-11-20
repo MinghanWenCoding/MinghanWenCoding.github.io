@@ -67,9 +67,10 @@ body {
 
 #first_pic{
   display: block;
+  margin-top:5vh;
   width: 100%;
-  height: auto;
-  object-fit: contain; /* This preserves the full image without cropping */
+  height: 50vh;
+  object-fit: cover; /* This preserves the full image without cropping */
 }
 
 #first_description{
@@ -187,15 +188,25 @@ body {
 
 .item_controller{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
+  width: 90%;
+  border: 1rem;
 
 }
 
 .item_picture{
-  background-color:aqua;
+  background-color:#F4F4F6;
   min-width:100px;
   min-height:100px;
   margin:1rem;
+  border-radius: 1rem;
+}
+
+.item_picture img{
+  object-fit: contain;
+  width:20vw;
+  height: 20vh;
+  border-radius: 1rem;
 }
 
 .item_list{
